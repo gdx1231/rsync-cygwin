@@ -1,0 +1,1 @@
+rsync -rtvz --password-file=/cygdrive/c/rsync/etc/rsync.password rsync@server_ip::source1 /cygdrive/d/backup/source1
