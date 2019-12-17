@@ -1,0 +1,21 @@
+use chroot = false
+strict modes = false
+#uid = 0
+#gid = 0
+log file = [PATH]/rsyncd.log
+
+[source1]
+path = /cygdrive/d/source1/
+read only = false
+transfer logging = yes
+auth users = rsync
+hosts allow = *
+secrets file = [PATH]/etc/rsyncd.password
+
+[source2]
+path = /cygdrive/d/source2/
+read only = false
+transfer logging = yes
+auth users = rsync
+hosts allow = *
+secrets file = [PATH]/etc/rsyncd.password
